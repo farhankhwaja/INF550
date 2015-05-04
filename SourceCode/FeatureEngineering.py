@@ -18,11 +18,9 @@ class FeatureEngineering:
         d = datetime.strptime(str(timestr), "%y%m%d%H")
         return [float(d.weekday()), float(d.hour)]
 
-    def vwfeature(data):
+    def vwfeature(self,data):
 
-        preproc = Pipeline([('fh',FeatureHasher( n_features=2**27,input_type='string', non_negative=False))])
-
-        y_train=data['click'].values +data['click'].values-1
+        data['click']=data['click'].values +data['click'].values-1
 
         ##for Vowpal Wabbit
         data['app'] = data['app_id'].values+data['app_domain'].values+data['app_category'].values
@@ -47,14 +45,7 @@ class FeatureEngineering:
         data['hour'] = data['hour'].map(lambda x:  x.hour)
         day = data['day'].values[len(data)-1]
 
-        #remove id and click columns
-        clean = data.drop(['id','click'], axis=1)
-        X_dict = np.asarray(clean.astype(str))
-        y_train = np.asarray(y_train).ravel()
-
-        X_train = preproc.fit_transform(X_dict)
-
-        return y_train,X_train
+        return data, np.array(data.columns.values).astype(str)
 
 
     def sgdfeature(self,data):
@@ -62,25 +53,22 @@ class FeatureEngineering:
         newdata = pd.DataFrame()
 
         preproc = Pipeline([('fh',FeatureHasher( n_features=2**20,input_type='string'))])
-        print('Inside Feature Engineering')
+
         ##for SGDClassifier
         newdata['app_id_specs'] = data['app_id'].values+data['app_domain'].values+data['app_category'].values
         newdata['app_dom_specs'] = data['app_domain'].values+data['app_category'].values
         newdata['site_id_specs'] = data['site_id'].values+data['site_domain'].values+data['site_category'].values
         newdata['site_dom_specs'] = data['site_domain'].values+data['site_category'].values
-        # data['device'] = data['device_model'].values+(data['device_type'].values.astype(str))+(data['device_conn_type'].values.astype(str))
         newdata['type'] = data['device_type'].values +data['device_conn_type'].values
         newdata['domain'] = data['app_domain'].values +data['site_domain'].values
         newdata['category'] = data['app_category'].values+data['site_category'].values
         newdata['pos_cat'] =  data['banner_pos'].values.astype(str)+data['app_category'].values+data['site_category'].values
         newdata['pos_dom'] =  data['banner_pos'].values.astype(str)+data['app_domain'].values+data['site_domain'].values
-        # data['pos_id'] =  data['banner_pos'].values.astype(str)+data['app_id'].values+data['site_id'].values
-
-        newdata['hour'] = data['hour'].map(lambda x: datetime.strptime(x.astype(str),"%y%m%d%H"))
-        newdata['dayoftheweek'] = newdata['hour'].map(lambda x:  x.weekday)
-        newdata['day'] = newdata['hour'].map(lambda x:  x.day)
-        newdata['hour'] = newdata['hour'].map(lambda x:  x.hour)
-        newdata = newdata.drop('hour',axis=1)
+        newdata['timestamp'] = data['hour'].map(lambda x: datetime.strptime(x.astype(str),"%y%m%d%H"))
+        newdata['dayoftheweek'] = newdata['timestamp'].map(lambda x:  x.weekday)
+        newdata['day'] = newdata['timestamp'].map(lambda x:  x.day)
+        newdata['hour'] = newdata['timestamp'].map(lambda x:  x.hour)
+        newdata = newdata.drop('timestamp',axis=1)
         newdata = newdata.astype(str)
         del data
         X_dict = np.asarray(newdata)
@@ -88,3 +76,5 @@ class FeatureEngineering:
         self.X_train = preproc.fit_transform(X_dict)
 
         return self.X_train
+
+

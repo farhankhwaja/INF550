@@ -1,0 +1,149 @@
+/usr/local/Cellar/python3/3.4.2_1/Frameworks/Python.framework/Versions/3.4/bin/python3.4 /Users/talibkhwaja/Desktop/INF_550/Project/FeatureHasher_SGD.py
+/usr/local/lib/python3.4/site-packages/pandas/io/parsers.py:1164: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  data = self._reader.read(nrows)
+Chunk 0 Read
+0  StratifiedKFold CV
+-- Epoch 1
+Norm: 27.51, NNZs: 1446, Bias: -0.975178, T: 7499999, Avg. loss: 1.164094
+Total training time: 3.39 seconds.
+-- Epoch 1
+Norm: 25.78, NNZs: 1480, Bias: -0.979735, T: 2500001, Avg. loss: 0.458435
+Total training time: 0.92 seconds.
+1  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.24, NNZs: 1480, Bias: -0.979476, T: 7500000, Avg. loss: 0.440374
+Total training time: 3.04 seconds.
+-- Epoch 1
+Norm: 24.24, NNZs: 1480, Bias: -0.980767, T: 2500000, Avg. loss: 0.431597
+Total training time: 0.86 seconds.
+2  StratifiedKFold CV
+-- Epoch 1
+Norm: 23.68, NNZs: 1480, Bias: -0.982516, T: 7500000, Avg. loss: 0.427046
+Total training time: 3.56 seconds.
+-- Epoch 1
+Norm: 23.65, NNZs: 1480, Bias: -0.984671, T: 2500000, Avg. loss: 0.424285
+Total training time: 0.90 seconds.
+3  StratifiedKFold CV
+-- Epoch 1
+Norm: 23.51, NNZs: 1480, Bias: -0.984173, T: 7500001, Avg. loss: 0.422167
+Total training time: 3.35 seconds.
+-- Epoch 1
+Norm: 23.38, NNZs: 1480, Bias: -0.985793, T: 2499999, Avg. loss: 0.420793
+Total training time: 0.94 seconds.
+Chunk 1 Read
+0  StratifiedKFold CV
+-- Epoch 1
+Norm: 25.02, NNZs: 1898, Bias: -0.984160, T: 7499999, Avg. loss: 0.439947
+Total training time: 3.34 seconds.
+-- Epoch 1
+Norm: 24.91, NNZs: 1914, Bias: -0.985338, T: 2500001, Avg. loss: 0.438466
+Total training time: 0.96 seconds.
+1  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.71, NNZs: 1914, Bias: -0.985865, T: 7500000, Avg. loss: 0.437843
+Total training time: 3.45 seconds.
+-- Epoch 1
+Norm: 24.71, NNZs: 1914, Bias: -0.985238, T: 2500000, Avg. loss: 0.436952
+Total training time: 0.96 seconds.
+2  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.48, NNZs: 1914, Bias: -0.985048, T: 7500000, Avg. loss: 0.436573
+Total training time: 3.24 seconds.
+-- Epoch 1
+Norm: 24.40, NNZs: 1914, Bias: -0.986597, T: 2500000, Avg. loss: 0.436307
+Total training time: 0.96 seconds.
+3  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.25, NNZs: 1914, Bias: -0.987098, T: 7500001, Avg. loss: 0.435757
+Total training time: 3.47 seconds.
+-- Epoch 1
+Norm: 24.16, NNZs: 1914, Bias: -0.985529, T: 2499999, Avg. loss: 0.435570
+Total training time: 0.95 seconds.
+Chunk 2 Read
+0  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.74, NNZs: 2729, Bias: -0.988756, T: 7500000, Avg. loss: 0.424429
+Total training time: 3.52 seconds.
+-- Epoch 1
+Norm: 24.68, NNZs: 2753, Bias: -0.989613, T: 2500000, Avg. loss: 0.423807
+Total training time: 1.17 seconds.
+1  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.65, NNZs: 2753, Bias: -0.989671, T: 7500000, Avg. loss: 0.423387
+Total training time: 3.06 seconds.
+-- Epoch 1
+Norm: 24.62, NNZs: 2753, Bias: -0.989968, T: 2500000, Avg. loss: 0.423309
+Total training time: 0.93 seconds.
+2  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.48, NNZs: 2753, Bias: -0.990412, T: 7500000, Avg. loss: 0.423077
+Total training time: 3.41 seconds.
+-- Epoch 1
+Norm: 24.43, NNZs: 2753, Bias: -0.989957, T: 2500000, Avg. loss: 0.422563
+Total training time: 1.04 seconds.
+3  StratifiedKFold CV
+-- Epoch 1
+Norm: 24.34, NNZs: 2753, Bias: -0.990467, T: 7500000, Avg. loss: 0.422596
+Total training time: 3.31 seconds.
+-- Epoch 1
+Norm: 24.18, NNZs: 2753, Bias: -0.990881, T: 2500000, Avg. loss: 0.422546
+Total training time: 0.92 seconds.
+Chunk 3 Read
+0  StratifiedKFold CV
+-- Epoch 1
+Norm: 25.65, NNZs: 3233, Bias: -0.993081, T: 7499999, Avg. loss: 0.400045
+Total training time: 3.17 seconds.
+-- Epoch 1
+Norm: 25.80, NNZs: 3244, Bias: -0.993281, T: 2500001, Avg. loss: 0.399373
+Total training time: 0.93 seconds.
+1  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.20, NNZs: 3244, Bias: -0.993386, T: 7500000, Avg. loss: 0.399018
+Total training time: 3.20 seconds.
+-- Epoch 1
+Norm: 26.18, NNZs: 3244, Bias: -0.994223, T: 2500000, Avg. loss: 0.399089
+Total training time: 0.91 seconds.
+2  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.25, NNZs: 3244, Bias: -0.993721, T: 7500000, Avg. loss: 0.398780
+Total training time: 3.09 seconds.
+-- Epoch 1
+Norm: 26.23, NNZs: 3244, Bias: -0.994255, T: 2500000, Avg. loss: 0.398817
+Total training time: 0.88 seconds.
+3  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.21, NNZs: 3244, Bias: -0.994711, T: 7500001, Avg. loss: 0.398713
+Total training time: 3.15 seconds.
+-- Epoch 1
+Norm: 26.21, NNZs: 3244, Bias: -0.994355, T: 2499999, Avg. loss: 0.398254
+Total training time: 0.88 seconds.
+Chunk 4 Read
+0  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.24, NNZs: 3246, Bias: -0.993552, T: 321725, Avg. loss: 0.433169
+Total training time: 0.10 seconds.
+-- Epoch 1
+Norm: 26.24, NNZs: 3246, Bias: -0.993662, T: 107242, Avg. loss: 0.432593
+Total training time: 0.04 seconds.
+1  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.24, NNZs: 3246, Bias: -0.993555, T: 321725, Avg. loss: 0.432177
+Total training time: 0.10 seconds.
+-- Epoch 1
+Norm: 26.23, NNZs: 3246, Bias: -0.993804, T: 107242, Avg. loss: 0.432004
+Total training time: 0.03 seconds.
+2  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.21, NNZs: 3246, Bias: -0.993739, T: 321725, Avg. loss: 0.431656
+Total training time: 0.12 seconds.
+-- Epoch 1
+Norm: 26.22, NNZs: 3246, Bias: -0.993976, T: 107242, Avg. loss: 0.431775
+Total training time: 0.04 seconds.
+3  StratifiedKFold CV
+-- Epoch 1
+Norm: 26.21, NNZs: 3246, Bias: -0.993529, T: 321726, Avg. loss: 0.431669
+Total training time: 0.12 seconds.
+-- Epoch 1
+Norm: 26.21, NNZs: 3246, Bias: -0.993268, T: 107241, Avg. loss: 0.431531
+Total training time: 0.04 seconds.
+Classifier Trained
