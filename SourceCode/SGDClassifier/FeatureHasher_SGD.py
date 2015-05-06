@@ -1,3 +1,5 @@
+__author__ = 'FarhanKhwaja'
+
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -8,7 +10,6 @@ import FeatureEngineering
 if __name__ == '__main__':
 
     start = datetime.now()
-    print('\n')
 
     fe = FeatureEngineering.FeatureEngineering()
 
