@@ -1,6 +1,3 @@
-/usr/local/Cellar/python3/3.4.2_1/Frameworks/Python.framework/Versions/3.4/bin/python3.4 /Users/talibkhwaja/Desktop/INF_550/Project/FeatureHasher_SGD.py
-/usr/local/lib/python3.4/site-packages/pandas/io/parsers.py:1164: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
-  data = self._reader.read(nrows)
 Chunk 0 Read
 0  StratifiedKFold CV
 -- Epoch 1
